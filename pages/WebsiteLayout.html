@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="../assets/fav.png">
+    <title>My Index Page</title>
+
+    <style>
+        * {
+          box-sizing: border-box; 
+        }
+        body {
+          display: flex;
+          min-height: 100vh;
+          flex-direction: row;
+          margin: 0;
+        }
+        .col-1 {
+          background: #D7E8D4;
+          flex: 1;
+        }
+        .col-2 {
+          display: flex;
+          flex-direction: column;
+          flex: 5;
+        }
+        .content {
+          display: flex;
+          flex-direction: row;
+        }
+        .content > article {
+          flex: 3;
+          min-height: 60vh;
+        }
+        .content > article > img {
+            display: block;
+            margin: auto;
+        }
+        .content > article > p , li {
+            font-size: 20px;
+            line-height: 2;
+            letter-spacing: 1px;
+        }
+        .content > aside {
+          background: beige;
+          flex: 1;
+        }
+        .content > aside > p {
+            font-size: 20px;
+            line-height: 2;
+            letter-spacing: 1px;
+        }
+        .content > footer > p {
+            font-size: 20px;
+            line-height: 2;
+            letter-spacing: 1px;
+        }
+        /*header*/ h1, footer {
+          background: yellowgreen;
+          height: 20vh;
+        }
+        header, footer, article, nav, aside {
+          padding: 1em;
+        }
+      </style>
+
+</html>
+
+
+<body>
+  <nav class="col-1">Nav</nav>
+    
+
+
+
+  <div class="col-2">
+    <h1>BridgeLabz is Cool ...</h1>
+  	<!-- <header>Header</header> -->
+    <main class="content">
+
+    <article>
+        <img src="../assets/BL_logo_square_jpg.jpg" alt="Hover Text." width="25%" >
+        <p>At BridgeLabz we are Techi Community of</p>
+        <ul>
+            <li>Technologist</li>
+            <li>Thinkers</li>
+            <li>Builders</li>
+        </ul>
+    </article>
+
+    <aside>
+        <p>Working together to keep the tech employability of 
+            engineers alive and accessible, so Tech companies worldwide
+            can get contributors and creators for technology solution
+        </p>
+    </aside>
+    </main>
+  	<footer>
+        <p>
+            To know about us, visit <a href="https://www.bridgelabz.com/">BridgeLabz</a> <!--Anchor tag <a> is used to say this Bridgelabz word has href link in it-->
+            to learn even moreabout our mission ie; <strong>Employability to all .</strong> <!-- <strong> makes tesxt bold -->
+        </p>
+      </footer>
+  </div>
+</body>
